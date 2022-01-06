@@ -16,5 +16,3 @@ RUN apt-get update --fix-missing
 
 COPY . $HOME/
 RUN pip install -r $HOME/requirements.txt
-
-RUN export PATH="$PATH:/usr/local/bin/python"
