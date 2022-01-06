@@ -8,4 +8,4 @@ RUN apt-get -y install wget bzip2 python3-pip python3-dev vim sudo \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
 
-RUN apt-get update --fix-missing
+RUN apt-get update
