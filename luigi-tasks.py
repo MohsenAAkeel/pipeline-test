@@ -4,7 +4,7 @@ from tasks import Task1, Task2, Task3, Task4
 
 class Pipeline1(luigi.WrapperTask):
     def requires(self):
-        yield Task0()
+        yield Task1()
         yield Task2()
         yield Task3()
 
