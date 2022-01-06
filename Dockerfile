@@ -9,3 +9,5 @@ RUN apt-get -y install wget bzip2 python3-pip python3-dev vim sudo \
   && pip3 install --upgrade pip
 
 RUN apt-get update
+
+RUN export PATH="$PATH:/usr/local/bin/python"
