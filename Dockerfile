@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 ENV HOME /home/ubuntu
-ENV LUIGI_CONFIG_PATH $HOME/datascience/config
+ENV LUIGI_CONFIG_PATH $HOME/pipeline-test/config
 
 
 RUN apt-get update && yes|apt-get upgrade
@@ -14,5 +14,6 @@ RUN apt-get -y install wget bzip2 python3-pip python3-dev vim sudo \
 
 RUN apt-get update --fix-missing
 
-COPY . $HOME/
-RUN pip install -r $HOME/requirements.txt
+COPY . $HOME/pipeline-test/
+
+RUN pip install -r $HOME/pipeline-test/requirements.txt
