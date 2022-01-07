@@ -11,4 +11,4 @@ RUN apt-get update --fix-missing
 
 COPY . $HOME/pipeline-test/
 
-RUN pip install -r $HOME/pipeline-test/requirements.txt
+RUN pip3 install -r $HOME/pipeline-test/requirements.txt
