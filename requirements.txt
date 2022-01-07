@@ -12,4 +12,4 @@ tenacity==6.0.0
 tornado==4.5.3
 tqdm==4.61.2
 traitlets==4.3.2
-urllib3==1.25.11
+urllib3>=1.26.5
