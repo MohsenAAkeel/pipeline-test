@@ -1,4 +1,4 @@
-retcode]
+[retcode]
 # codes are in increasing level of severity (for most applications)
 already_running=10
 missing_data=20
