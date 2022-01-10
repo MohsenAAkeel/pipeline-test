@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+
 python -m luigi --module luigi-tasks Pipeline1 --local-scheduler
 echo $?
 
