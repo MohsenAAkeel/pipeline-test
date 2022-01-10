@@ -5,7 +5,10 @@ from tasks import Task1, Task2, Task3, Task4
 class Pipeline1(luigi.WrapperTask):
     def requires(self):
         yield Task1()
-        yield Task2()
+        try:
+            yield Task2()
+        except ValueError:
+            raise ValueError
         yield Task3()
 
 class Pipeline2(luigi.WrapperTask):
