@@ -11,6 +11,7 @@ class Task1(luigi.Task):
         return luigi.LocalTarget('stuff/task1.csv')
 
     def run(self):
+        sys.exit(luigi.retcodes.retcode().unhandled_exception)
         print('task 1 complete...')
         print()
         print()
@@ -46,6 +47,7 @@ class Task3(luigi.Task):
         return luigi.LocalTarget('stuff/task3.csv')
 
     def run(self):
+        sys.exit(luigi.retcodes.retcode().unhandled_exception)
         print('task 3 complete...')
         t = pd.DataFrame()
         print()
