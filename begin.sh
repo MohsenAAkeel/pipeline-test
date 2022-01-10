@@ -1,6 +1,6 @@
 #!/bin/sh
-
-export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+PYTHONPATH='.' luigi --module luigi-tasks Pipeline1 --local-scheduler
+echo $?
 
 luigi --module luigi-tasks Pipeline1 --local-scheduler
 echo $?
