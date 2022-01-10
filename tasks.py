@@ -27,7 +27,7 @@ class Task2(luigi.Task):
         return luigi.LocalTarget('stuff/task2.csv')
 
     def run(self):
-        raise ValueError
+        sys.exit(luigi.retcodes.retcode().unhandled_exception)
         print('task 2 complete...')
         t = pd.DataFrame()
         print()
