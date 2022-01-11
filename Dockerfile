@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 ENV HOME /home/ubuntu
-
+ENV LUIGI_CONFIG_PATH $HOME/datascience/luigi.cfg
 RUN apt-get update && yes|apt-get upgrade
 
 RUN apt-get install -y software-properties-common  # required for add-apt-repository
