@@ -20,6 +20,6 @@ RUN apt-get update --fix-missing
 
 COPY . $HOME/test-git/
 
-RUN pip3 install -r $HOME/pipeline-test/requirements.txt
+RUN pip3 install -r $HOME/test-git/requirements.txt
 
 # complete
