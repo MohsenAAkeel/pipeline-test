@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 ENV HOME /home/ubuntu
-ENV LUIGI_CONFIG_PATH $HOME/datascience/luigi.cfg
+ENV LUIGI_CONFIG_PATH $HOME/test-git/luigi.cfg
 RUN apt-get update && yes|apt-get upgrade
 
 RUN apt-get install -y software-properties-common  # required for add-apt-repository
@@ -18,7 +18,7 @@ RUN apt-get update
 
 RUN apt-get update --fix-missing
 
-COPY . $HOME/datascience/
+COPY . $HOME/test-git/
 
 RUN pip3 install -r $HOME/pipeline-test/requirements.txt
 
