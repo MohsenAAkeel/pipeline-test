@@ -6,4 +6,4 @@ python -m luigi --module luigi-tasks Pipeline1 --local-scheduler
 #python luigi-tasks.py Pipeline1
 echo $?
 
-ls /root/
+ls ~/
