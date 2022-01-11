@@ -18,7 +18,7 @@ RUN apt-get update
 
 RUN apt-get update --fix-missing
 
-COPY . $HOME/test-git/
+#COPY . $HOME/test-git/
 
 RUN pip3 install -r $HOME/test-git/requirements.txt
 
