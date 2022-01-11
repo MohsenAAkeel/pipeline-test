@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+ENV HOME /home/ubuntu
+
 RUN apt-get update && yes|apt-get upgrade
 
 RUN apt-get install -y software-properties-common  # required for add-apt-repository
@@ -15,6 +17,8 @@ RUN apt-get -y install wget bzip2 python3-pip python3-dev vim sudo \
 RUN apt-get update
 
 RUN apt-get update --fix-missing
+
+COPY . $HOME/datascience/
 
 RUN pip3 install -r $HOME/pipeline-test/requirements.txt
 
