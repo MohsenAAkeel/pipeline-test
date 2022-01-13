@@ -29,7 +29,7 @@ class Task2(luigi.Task):
         return luigi.LocalTarget('stuff/task2.csv')
 
     def run(self):
-        #assert(True==False)
+        assert(True==False)
         print('task 2 complete...')
         t = pd.DataFrame()
         print()
